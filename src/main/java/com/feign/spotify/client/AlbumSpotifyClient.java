@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 @FeignClient(
 		name = "AlbumSpotifyClient",
-		url = "https://api.spotify.com"
+		url = "${spotify.url}"
 		)
 public interface AlbumSpotifyClient {
 	
